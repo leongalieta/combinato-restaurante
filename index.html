@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Combinato Restaurante · almoço caseiro na Zona 07, Maringá</title>
+<meta name="description" content="Combinato Restaurante: buffet de almoço, self-service a quilo ou livre, costela e pernil assados. Av. Raccanello Filho, 5475 · Zona 07, Maringá. WhatsApp (44) 99158-5353.">
+<meta property="og:title" content="Combinato Restaurante · almoço na Zona 07">
+<meta property="og:description" content="Comida caseira, costela e pernil no buffet. Todos os dias, 11h às 14h30.">
+<meta property="og:type" content="restaurant">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Karla:ital,wght@0,400;0,500;0,700;1,400&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --slate:#232a26;
+  --slate-2:#2d3630;
+  --slate-3:#37423b;
+  --chalk:#f1efe6;
+  --chalk-dim:#b9bdb2;
+  --steel:#8d9691;
+  --tomato:#a83320;
+  --tomato-chalk:#ef8a6d;
+  --line:rgba(241,239,230,.16);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--slate);
+  color:var(--chalk);
+  font-family:'Karla',system-ui,-apple-system,sans-serif;
+  font-size:17px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.35;
+  background-image:
+    radial-gradient(circle at 15% 10%,rgba(208,69,44,.10),transparent 40%),
+    radial-gradient(circle at 85% 75%,rgba(141,150,145,.08),transparent 45%);
+  mix-blend-mode:screen;
+}
+.wrap{max-width:1220px;margin:0 auto;padding:0 30px;position:relative;z-index:1}
+a{color:inherit}
+img{display:block;max-width:100%}
+::selection{background:var(--tomato);color:var(--chalk)}
+
+/* top */
+.top{border-bottom:1px solid var(--line);background:rgba(35,42,38,.9)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:58px;padding-top:14px;padding-bottom:14px}
+.top b{font-family:'Archivo Black',sans-serif;font-size:14px;letter-spacing:.02em;text-transform:uppercase}
+.top-mid{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--chalk-dim)}
+.top-rate{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.top-rate i{font-style:normal;color:var(--tomato-chalk)}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center;padding-top:70px;padding-bottom:78px;min-height:660px}
+.hero-copy{position:relative;z-index:2}
+p.eyebrow{
+  font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--tomato-chalk);display:flex;align-items:center;gap:12px;margin-bottom:22px;
+}
+p.eyebrow:before{content:"";width:36px;height:1px;background:currentColor;display:block}
+h1{
+  font-family:'Archivo Black',sans-serif;font-size:clamp(56px,8.6vw,116px);
+  line-height:.9;letter-spacing:-.045em;margin-left:-4px;
+}
+.kicker{font-family:'Courier Prime',monospace;font-size:13px;letter-spacing:.3em;text-transform:uppercase;color:var(--chalk-dim);margin-top:22px}
+.lede{font-size:clamp(17px,1.9vw,20px);line-height:1.5;max-width:32ch;margin-top:20px;color:rgba(241,239,230,.92)}
+.price-board{
+  display:flex;gap:0;margin-top:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  max-width:430px;
+}
+
+.price-cell{flex:1;display:flex;position:relative}
+.price-cell + .price-cell:before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1px;background:var(--line)}
+.price-cell > div{padding:16px 26px;width:100%}
+.price-cell:first-child > div{padding-left:0}
+.price-cell:last-child > div{padding-right:0}
+.price-cell small{display:block;font-family:'Courier Prime',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--chalk-dim);margin-bottom:4px}
+.price-cell b{font-family:'Archivo Black',sans-serif;font-size:26px;letter-spacing:-.02em}
+.price-cell span{font-family:'Courier Prime',monospace;font-size:11px;color:var(--chalk-dim)}
+.cta{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  max-width:420px;background:var(--tomato);color:var(--chalk);text-decoration:none;
+  padding:18px 22px;margin-top:26px;font-family:'Archivo Black',sans-serif;font-size:18px;letter-spacing:-.01em;
+  transition:transform .2s ease,background .2s ease;
+}
+.cta:hover{transform:translateY(-2px);background:#8f2a19}
+.cta span{font-family:'Karla',sans-serif;font-size:22px}
+.micro{font-family:'Courier Prime',monospace;font-size:12px;color:var(--chalk-dim);margin-top:16px;letter-spacing:.02em}
+.micro b{color:var(--chalk);font-weight:400}
+
+/* hero media */
+.hero-media{position:relative;z-index:2}
+.frame{position:relative;border:1px solid rgba(241,239,230,.28);padding:9px;background:rgba(55,66,59,.45)}
+.frame img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hero-media figcaption{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--chalk-dim);margin-top:12px}
+.stamp{
+  position:absolute;top:-24px;right:-18px;width:92px;height:92px;border-radius:50%;
+  border:2px solid var(--tomato-chalk);color:var(--tomato-chalk);background:rgba(35,42,38,.72);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  transform:rotate(-8deg);backdrop-filter:blur(3px);
+}
+.stamp span{font-family:'Archivo Black',sans-serif;font-size:30px;line-height:1;letter-spacing:-.03em}
+.stamp small{font-family:'Courier Prime',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:3px}
+
+/* strip */
+.strip{background:var(--tomato);color:var(--chalk);border-top:1px solid var(--slate);border-bottom:1px solid var(--slate);padding:14px 0}
+.strip .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.strip span{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.strip b{font-family:'Archivo Black',sans-serif;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+
+/* board */
+.board{padding:104px 0 112px;border-bottom:1px solid var(--line)}
+.board-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:44px}
+h2{font-family:'Archivo Black',sans-serif;font-size:clamp(34px,4.6vw,58px);letter-spacing:-.04em;line-height:.98;max-width:18ch}
+.board-head p{font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--chalk-dim);max-width:26ch}
+
+.slate{
+  background:var(--slate-2);border:1px solid rgba(241,239,230,.2);padding:34px 34px 30px;position:relative;
+}
+.slate:before{content:"";position:absolute;inset:8px;border:1px dashed rgba(241,239,230,.12);pointer-events:none}
+.menu-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;padding:17px 0;border-bottom:1px dashed rgba(241,239,230,.14)}
+.menu-row:last-of-type{border-bottom:0}
+.menu-row h3{font-family:'Archivo Black',sans-serif;font-size:20px;letter-spacing:-.02em;margin-bottom:3px}
+.menu-row p{font-size:14.5px;color:var(--chalk-dim);max-width:44ch}
+.menu-row .val{font-family:'Courier Prime',monospace;font-size:15px;letter-spacing:.02em;white-space:nowrap}
+.menu-row .val.small{font-size:12px;color:var(--chalk-dim);letter-spacing:.08em;text-transform:uppercase}
+.board-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:26px;font-family:'Courier Prime',monospace;font-size:12px;color:var(--chalk-dim);letter-spacing:.04em}
+
+/* info */
+.info{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding:100px 0 110px}
+.info h3{font-family:'Archivo Black',sans-serif;font-size:24px;letter-spacing:-.02em;margin-bottom:18px}
+.hr{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15.5px}
+.hr span{color:var(--chalk-dim)}
+.hr.hi b{color:var(--tomato-chalk)}
+.addr{font-size:17px;line-height:1.6;color:rgba(241,239,230,.9)}
+.addr a{color:var(--tomato-chalk);text-decoration:none;border-bottom:1px solid currentColor}
+.tel{display:block;font-family:'Archivo Black',sans-serif;font-size:clamp(24px,3vw,32px);letter-spacing:-.02em;text-decoration:none;margin:8px 0 20px}
+.tel:hover{color:var(--tomato-chalk)}
+.note{font-family:'Courier Prime',monospace;font-size:12px;color:var(--chalk-dim);margin-top:18px;line-height:1.6;max-width:46ch}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:28px 0 36px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer span{font-family:'Courier Prime',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--chalk-dim)}
+footer b{font-family:'Archivo Black',sans-serif;color:var(--chalk);font-size:11px}
+
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.is-in{opacity:1;transform:none}
+a:focus-visible{outline:3px solid var(--tomato);outline-offset:4px}
+
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:40px;padding-top:52px;padding-bottom:64px;min-height:0}
+  .info{grid-template-columns:1fr;gap:46px;padding:76px 0 84px}
+  .top-mid{display:none}
+  .board{padding:76px 0 84px}
+}
+@media(max-width:560px){
+  .wrap{padding:0 22px}
+  h1{font-size:clamp(48px,14vw,84px)}
+  .kicker{font-size:11px;letter-spacing:.24em}
+  .price-board{flex-direction:column;max-width:100%}
+  .price-cell + .price-cell:before{display:none}
+  .price-cell > div, .price-cell:first-child > div, .price-cell:last-child > div{padding:14px 0}
+  .price-cell + .price-cell{border-top:1px solid var(--line)}
+  .cta{max-width:100%}
+  .strip .wrap{justify-content:center;gap:10px 14px}
+  .strip span:nth-of-type(3),.strip b:nth-of-type(2),.strip b:nth-of-type(3){display:none}
+  .stamp{width:74px;height:74px;top:-16px;right:6px}
+  .stamp span{font-size:24px}
+  .slate{padding:24px 20px 22px}
+  .menu-row{grid-template-columns:1fr;gap:6px}
+  .menu-row .val{justify-self:start}
+  footer .wrap{flex-direction:column;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .cta{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <b>Combinato</b>
+    <span class="top-mid">Zona 07 · Maringá · PR</span>
+    <span class="top-rate"><i>★</i> 4,8 no Google</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1>Combinato</h1>
+      <p class="kicker">Almoço · Zona 07 · self-service</p>
+      <p class="lede">Comida caseira no buffet, costela e pernil assados, salão amplo para almoçar sem pressa.</p>
+
+      <div class="price-board">
+        <div class="price-cell">
+          <div><small>Buffet livre</small>
+          <b>R$ 41,90</b><br>
+          <span>por pessoa</span></div>
+        </div>
+        <div class="price-cell">
+          <div><small>A quilo</small>
+          <b>R$ 90</b><br>
+          <span>o quilo · domingo</span></div>
+        </div>
+      </div>
+
+      <a class="cta" href="https://wa.me/5544991585353?text=Oi!%20Vim%20pelo%20site%20do%20Combinato%20e%20queria%20saber%20o%20buffet%20de%20hoje." target="_blank" rel="noopener">Chamar no WhatsApp <span>→</span></a>
+      <p class="micro"><b id="status">Aberto hoje, 11h às 14h30</b> · (44) 99158-5353</p>
+    </div>
+
+    <figure class="hero-media reveal">
+      <div class="frame">
+        <img src="https://cdn.kairogen.ai/gallery/images/6ad659a7a2cf9f70d86bac6f/0a0b05c7-c94b-43bc-91dc-41e50c761733.png" alt="Buffet de almoço com costela, pernil, saladas e salão com mesas" width="1376" height="768" loading="eager">
+      </div>
+      <figcaption>Buffet do almoço · imagem ilustrativa</figcaption>
+      <div class="stamp" aria-label="Nota 4,8 no Google"><span>4,8</span><small>Google</small></div>
+    </figure>
+  </div>
+</header>
+
+<div class="strip" aria-hidden="true">
+  <div class="wrap">
+    <span>Buffet de almoço</span><b>◆</b><span>Costela e pernil</span><b>◆</b><span>Marmitex</span><b>◆</b><span>Todos os dias até 14h30</span>
+  </div>
+</div>
+
+<section class="board">
+  <div class="wrap">
+    <div class="board-head">
+      <h2>O que tem no balcão.</h2>
+      <p>Preços de referência · confirme no WhatsApp</p>
+    </div>
+
+    <div class="slate reveal">
+      <div class="menu-row">
+        <div><h3>Buffet livre</h3><p>Comida caseira à vontade: arroz, feijão, carnes, massas, vegetais e saladas do dia.</p></div>
+        <div class="val">R$ 41,90 <span style="font-family:'Courier Prime',monospace;font-size:11px;color:var(--chalk-dim)">/pessoa</span></div>
+      </div>
+      <div class="menu-row">
+        <div><h3>Self-service a quilo</h3><p>Você monta o prato e paga o peso. Valor de domingo divulgado no Google.</p></div>
+        <div class="val">R$ 90 <span style="font-family:'Courier Prime',monospace;font-size:11px;color:var(--chalk-dim)">/kg</span></div>
+      </div>
+      <div class="menu-row">
+        <div><h3>Costela e pernil assados</h3><p>Os assados que aparecem no buffet · chegam cedo e costumam acabar.</p></div>
+        <div class="val small">no buffet</div>
+      </div>
+      <div class="menu-row">
+        <div><h3>Marmitex</h3><p>Para levar, no preço do dia. Chame no WhatsApp para confirmar e reservar.</p></div>
+        <div class="val small">sob consulta</div>
+      </div>
+      <div class="menu-row">
+        <div><h3>Bebidas e sobremesa</h3><p>Consulte no balcão · valores não divulgados no site.</p></div>
+        <div class="val small">sob consulta</div>
+      </div>
+
+      <div class="board-foot">
+        <span>Preço do quilo e do buffet conforme divulgação pública de domingo</span>
+        <span>Sujeito a alteração</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap info">
+  <div class="reveal">
+    <h3>Horário</h3>
+    <div class="hoje" style="font-family:'Courier Prime',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--tomato-chalk);margin-bottom:12px" id="hoje">&nbsp;</div>
+    <div class="hr"><span>Segunda a sábado</span><b>11h · 14h30</b></div>
+    <div class="hr"><span>Domingo</span><b>11h · 14h30</b></div>
+    <p class="note">Almoço apenas. Chegue antes das 14h para aproveitar o buffet completo.</p>
+  </div>
+  <div class="reveal">
+    <h3>Onde fica</h3>
+    <p class="addr">Av. Advogado Horácio Raccanello Filho, 5475<br>Zona 07 · Maringá · PR · 87013-000<br><a href="https://www.google.com/maps/search/Combinato+Restaurante+Maring%C3%A1" target="_blank" rel="noopener">Abrir no Google Maps</a></p>
+    <h3 style="margin-top:32px">Chama no WhatsApp</h3>
+    <a class="tel" href="https://wa.me/5544991585353?text=Oi!%20Vim%20pelo%20site%20do%20Combinato%20e%20queria%20saber%20o%20buffet%20de%20hoje." target="_blank" rel="noopener">(44) 99158-5353</a>
+    <p class="note">Acessível para cadeiras de rodas · leve embora disponível.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span><b>Combinato</b> Restaurante · Zona 07 · Maringá · PR</span>
+    <span>Site gratuito, sem custo e sem fidelidade</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var d = new Date().getDay();
+  var hoje = document.getElementById('hoje');
+  if (hoje) {
+    var nomes = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+    hoje.textContent = 'Hoje, ' + nomes[d] + ' · 11h às 14h30';
+  }
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function(e){e.classList.add('is-in');}); return; }
+  var io = new IntersectionObserver(function(en){
+    en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target);} });
+  }, {threshold:.1, rootMargin:'0px 0px -8% 0px'});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>
